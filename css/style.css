@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+
+
+.ptb_1 {
+    padding: 40px 0;
+}
+
+.btn {
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.btn_cta {
+    background-color: brown;
+}
+
+.btn_cta:hover {
+    color: brown;
+    background-color: black;
+}
+
+/** navbar **/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 16px;
+
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.logo_titel,
+.navbar ul li a,
+.header {
+    color: white;
+}
+
+.navbar ul li a {
+    margin: 0 6px;
+    padding: 12px;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    background-color: brown;
+    border-radius: 4px;
+}
+
+/**header**/
+.header {
+    background: url('../img/images.jpg') no-repeat center/cover;
+    height: 93.9vh;
+}
+
+.header_0 {
+    font-size: 86px;
+}
+
+.header_1 {
+    font-size: 63px;
+    margin: 20px 0px;
+}
+
+.header_2 {
+    font-size: 38px;
+}
+
+.center_text {
+    text-align: center;
+}
+
+
+.header .header_content {
+    background-color: #00000080;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header .header_content .header_0 {
+    padding-bottom: 12px;
+}
+
+.cta_catch {
+    font-size: 12px;
+    margin-bottom: 22px;
+}
+
+/**section 1**/
+.location_section {
+    background-color: #fafafa;
+}
+
+.location_section_top_text {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.locations {
+    display: flex;
+}
+
+.location {
+    flex: 1;
+    padding: 30px 30px 15px 30px;
+}
+
+.location_text {
+    padding: 15px;
+}
+
+/** display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px; **/
+/** section 2 **/
+.sect_2 {
+    display: grid;
+    grid-template-columns: 700px auto;
+    grid-gap: 20px;
+    text-align: left;
+}
+
+
+
+.part_1 {
+    margin: 70px 150px;
+
+}
+
+.video {
+
+    padding: 80px 150px;
+}
+
+.btn_cta-2 {
+    margin-top: 50px;
+}
+
+/**   sect 3**/
