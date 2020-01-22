@@ -23,60 +23,48 @@ h6 {
     font-weight: 500;
     text-transform: capitalize;
 }
-
-.container {
-    max-width: 1280px;
-    margin: auto;
-    overflow: hidden;
-
-}
-
-
-
+/********************
+bouton
+************************/
 .btn {
     color: black;
-
     padding: 10px 20px;
     border-radius: 4px;
-
+    background-color: rgba(252, 97, 97, 1);
 }
-
-.btn_cta {
-    background-color: rgb(80, 60, 60);
-    margin-top: 20px;
-}
-
-.btn_cta:hover {
-    color: brown;
+.btn:hover {
+    color: rgba(252, 97, 97, 1);
     background-color: black;
 }
 
-/** navbar **/
+/******************
+ navbar ************/
+
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 16px;
-    background-color: #00000080;
-
-
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    margin-right: 120px;
+    position: sticky;
+    top: 0;
 }
 
 .navbar ul li a {
     margin: 0 6px;
     padding: 12px;
     color: black;
+    font-weight: bold;
 }
 
 .navbar ul li a:hover {
-    color: white;
-    background-color: rgb(80, 60, 60);
+    color:black;
+    background-color: rgba(252, 97, 97, 1);
     border-radius: 4px;
 }
 
@@ -84,18 +72,14 @@ h6 {
 .header {
     background: no-repeat center/cover fixed;
     height: 100vh;
-    animation: toktok 30s  infinite;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    animation: Anim 40s  infinite;
     position: relative;
-    height: 100vh;
     overflow: hidden;
 
 }
 
 
-@keyframes toktok {
+@keyframes Anim {
 
     0% {
         background-image: url("../img/SLID1.jpg");
@@ -113,23 +97,21 @@ h6 {
         background-image: url("../img/SLID1.jpg");
     }
 }
-
 .header_1 {
     font-size: 63px;
+    margin-bottom: 30px;
 }
-
 .header_2 {
-    font-size: 38px;
+    font-size: 28px;
+    /* border: 1px solid rgba(252, 97, 97, 1); */
+    background-color:black;
+    border-radius: 30px;
+    padding: 8px;
+    color: white;
+
 }
-
-.center_text {
-    text-align: center;
-}
-
-
-
 .header .header_content {
-    background-color: #00000080;
+    background-color: rgba(0, 0, 0, 0.1);
     height: 98%;
     display: flex;
     flex-direction: column;
@@ -137,7 +119,6 @@ h6 {
     justify-content: center;
     position: relative;
 }
-
 .header .header_content img {
     position: absolute;
     top: 22%;
@@ -146,7 +127,7 @@ h6 {
     /* z-index: 1; */
 }
 
-.header_0 {
+.header-main-0 {
     padding-bottom: 12px;
     font-size: 62px;
 }
@@ -164,25 +145,81 @@ h6 {
 }
 
 /**section**/
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 50PX 30px ;
 
-.ptb_1 {
-    padding: 40px 0;
 }
 .location_section{
     background-color: #fafafa;
-}
-.location_section_top_text{
-    font-size: 20px;
-    padding-bottom: 30px;
+    padding: 40px 0;
+    text-align: center;
 }
 .locations{
-    display: flex;
-   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px 50px;
+    position: relative;
+    animation: mymove 10s ;
+    
 }
+@keyframes mymove {
+    from {left: -300px;}
+    to {left: 10px;}
+  }
+
 .location{
     flex:1;
     padding: 30px 30px 15px 30px;
+    border: 1px dotted black;
+    border-radius: 30px;
+    background-color:black;
+   
+  
+}
+.location:hover{
+
+    transform: scale(1.2,1.2);
+    animation-name: example;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+}
+@keyframes example {
+   0% {background-color: black;}
+    100% {background-color: rgba(252, 97, 97, 1);}
+  }
+.location:nth-child(1){
+    text-align: left;
+}
+.location:nth-child(3){
+    text-align: right;
 }
 .location_text{
-    padding: 15px;
+    padding: 12px;
+    line-height: 1.8;
 } 
+
+/***************
+part_2        **********************/
+.decal{
+
+    transform: skewY(-3.1deg);
+  
+}
+.sect_2 {
+    display: grid;
+    -ms-grid-template-columns: 700px auto;
+    -ms-grid-gap: 20px;
+    grid-template-columns: 700px auto;
+    grid-gap: 20px;
+    text-align: justify;
+    background:url("../img/back_sect2.jpg") no-repeat center/cover fixed;
+}
+.part_1 {
+    margin: 70px 150px;
+
+}
+.back_img{
+    
+}
