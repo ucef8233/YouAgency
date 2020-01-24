@@ -8,7 +8,7 @@ body {
     font-family: 'Indie Flower', cursive;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
-   
+
 
 }
 
@@ -25,6 +25,7 @@ h6 {
     font-weight: 500;
     text-transform: capitalize;
 }
+
 /********************
 bouton
 ************************/
@@ -34,6 +35,7 @@ bouton
     border-radius: 4px;
     background-color: rgba(252, 97, 97, 1);
 }
+
 .btn:hover {
     color: rgba(252, 97, 97, 1);
     background-color: black;
@@ -47,15 +49,13 @@ bouton
     justify-content: space-around;
     padding: 16px;
     background-color: rgba(0, 0, 0, 0.1);
-    
+
 }
 
 .navbar ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    position: sticky;
-    top: 0;
 }
 
 .navbar ul li a {
@@ -66,7 +66,7 @@ bouton
 }
 
 .navbar ul li a:hover {
-    color:black;
+    color: black;
     background-color: rgba(252, 97, 97, 1);
     border-radius: 4px;
 }
@@ -75,7 +75,7 @@ bouton
 .header {
     background: no-repeat center/cover fixed;
     height: 100vh;
-    animation: Anim 40s  infinite;
+    animation: Anim 40s infinite;
     position: relative;
     overflow: hidden;
 
@@ -100,20 +100,23 @@ bouton
         background-image: url("../img/SLID1.jpg");
     }
 }
+
 .header_1 {
     font-size: 4rem;
     margin-bottom: 2rem;
     text-align: center;
 }
+
 .header_2 {
     font-size: 28px;
     /* border: 1px solid rgba(252, 97, 97, 1); */
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 30px;
     padding: 0.5rem;
     color: white;
 
 }
+
 .header .header_content {
     background-color: rgba(0, 0, 0, 0.1);
     height: 98%;
@@ -123,6 +126,7 @@ bouton
     justify-content: center;
     position: relative;
 }
+
 .header .header_content img {
     position: absolute;
     top: 22%;
@@ -152,58 +156,76 @@ bouton
 .container {
     max-width: 1280px;
     margin: auto;
-    padding: 50PX 30px ;
+    padding: 50PX 30px;
 
 }
-.location_section{
+
+.location_section {
     background-color: #fafafa;
     padding: 40px 0;
     text-align: center;
 }
-.locations{
+
+.locations {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px 50px;
     position: relative;
-    animation: mymove 10s ;
-    
-}
-@keyframes mymove {
-    from {left: -300px;}
-    to {left: 10px;}
-  }
+    animation: mymove 10s;
 
-.location{
-    flex:1;
+}
+
+@keyframes mymove {
+    from {
+        left: -300px;
+    }
+
+    to {
+        left: 10px;
+    }
+}
+
+.location {
+    flex: 1;
     padding: 30px 30px 15px 30px;
     border: 1px dotted black;
     border-radius: 30px;
-    background-color:black;
-    box-shadow: 10px 10px 8px black,5px 5px 8px rgba(252, 97, 97, 1) ;
-  
-}
-.location:hover{
+    background-color: black;
+    box-shadow: 10px 10px 8px black, 5px 5px 8px rgba(252, 97, 97, 1);
 
-    transform: scale(1.1,1.1);
-    animation-name: example;
-   animation-duration: 2s;
-   animation-fill-mode: forwards;
-   box-shadow:5px 5px 8px rgba(252, 97, 97, 1), 10px 10px 8px black  ;
 }
+
+.location:hover {
+
+    transform: scale(1.1, 1.1);
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    box-shadow: 5px 5px 8px rgba(252, 97, 97, 1), 10px 10px 8px black;
+}
+
 @keyframes example {
-   0% {background-color: black;}
-    100% {background-color: rgba(252, 97, 97, 1);}
-  }
-.location:nth-child(1){
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: rgba(252, 97, 97, 1);
+    }
+}
+
+.location:nth-child(1) {
     text-align: left;
 }
-.location:nth-child(3){
+
+.location:nth-child(3) {
     text-align: right;
 }
-.location_text{
+
+.location_text {
     padding: 12px;
     line-height: 1.8;
-} 
+}
 
 /***************
 part_2        **********************/
@@ -212,16 +234,17 @@ part_2        **********************/
 } 
 a voir pour section 3:4
 */
-.part_1{
+.part_1 {
     transform: none;
 }
 
 .sect_2 {
-    
+
     text-align: justify;
-    background:url("../img/back_sect2.jpg") no-repeat center/cover fixed;
+    background: url("../img/back_sect2.jpg") no-repeat center/cover fixed;
     height: 100vh;
 }
+
 .part_1 {
     margin: 70px 150px;
     max-width: 400px;
@@ -229,117 +252,141 @@ a voir pour section 3:4
     line-height: 1.8;
 
 }
+
 /***************************
 realisation
 *******************************/
-.realisation{
+.realisation {
     display: flex;
     justify-content: space-around;
 }
-.sect_3{
+
+.sect_3 {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-   
 
 
 
-@media only screen and (max-width: 600px)
-{
-    body{
+
+@media only screen and (max-width: 600px) {
+    body {
         overflow-x: hidden;
     }
+
     /*************  header
     **********************/
-    .navbar{
+    .navbar {
         flex-direction: column;
         align-items: center;
     }
-    .navbar ul{
+
+    .navbar ul {
         flex-direction: column;
 
     }
-    .navbar ul{
+
+    .navbar ul {
         flex-direction: column;
 
     }
+
     .navbar ul li {
         margin-bottom: 1.1rem;
-        border :1px solid rgba(252, 97, 97, 0.1);
+        border: 1px solid rgba(252, 97, 97, 0.1);
         background-color: rgba(252, 97, 97, 0.1);
         border-radius: 30px;
         color: white;
     }
-    .navbar ul li:nth-child(1){
+
+    .navbar ul li:nth-child(1) {
         padding: 3px 75px;
     }
-    .navbar ul li:nth-child(2){
+
+    .navbar ul li:nth-child(2) {
         padding: 3px 100PX;
     }
-    .navbar ul li:nth-child(3){
+
+    .navbar ul li:nth-child(3) {
         padding: 3px 100PX;
     }
-    .navbar ul li:nth-child(4){
+
+    .navbar ul li:nth-child(4) {
         padding: 3px 150PX;
         margin-bottom: 50px;
     }
-    .navbar ul li:nth-child(5){
+
+    .navbar ul li:nth-child(5) {
         padding: 3px 175PX;
         display: none;
     }
-    .navbar ul li:nth-child(6){
+
+    .navbar ul li:nth-child(6) {
         padding: 3px 170PX;
     }
-    .navbar ul li:nth-child(7){
+
+    .navbar ul li:nth-child(7) {
         padding: 3px 130PX;
     }
-    .navbar ul li:nth-child(8){
+
+    .navbar ul li:nth-child(8) {
         padding: 3px 110PX;
     }
-    .navbar ul li:nth-child(9){
+
+    .navbar ul li:nth-child(9) {
         padding: 3px 15PX;
     }
-    .header{
+
+    .header {
         animation: none;
     }
-    .header-main{
-        top:2%;
-        left:6%;    
+
+    .header-main {
+        top: 2%;
+        left: 6%;
     }
-    .header_content img{
+
+    .header_content img {
         width: 435px;
-       top:-55% !important;
-       left:-6% !important; 
-         z-index: -1;  
-   }
-   .logo_title{
-       margin-bottom: 75px;
-   }
-   .header-main-0{
-       display: none;
-   }
-   /***********************
+        top: -55% !important;
+        left: -6% !important;
+        z-index: -1;
+    }
+
+    .logo_title {
+        margin-bottom: 75px;
+    }
+
+    .header-main-0 {
+        display: none;
+    }
+
+    /***********************
    sect 1*****************/
-       .locations{
+    .locations {
         display: grid;
-        grid-template-columns: 1fr;  
-       }
-       .header2{
-           text-align: center;
-       }
-       /*********************
+        grid-template-columns: 1fr;
+    }
+
+    .header2 {
+        text-align: center;
+    }
+
+    /*********************
        sect_2
        ***************************/
-       .sect_2{
-           text-align: center;
-           
-       }
-       .part_1{
+    .sect_2 {
+        text-align: center;
+
+    }
+
+    .part_1 {
         margin: 10px 10px;
-       }
-       .realisation{
+    }
+
+    .realisation {
         flex-direction: column;
         align-items: center;
         overflow: auto;
-       }
-
+    }
+}
