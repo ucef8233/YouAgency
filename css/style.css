@@ -25,6 +25,9 @@ h6 {
     font-weight: 500;
     text-transform: capitalize;
 }
+.center_text {
+    text-align: center;
+}
 
 /********************
 bouton
@@ -105,6 +108,7 @@ bouton
     font-size: 4rem;
     margin-bottom: 2rem;
     text-align: center;
+    margin-top: 30px;
 }
 
 .header_2 {
@@ -162,7 +166,7 @@ bouton
 
 .location_section {
     background-color: #fafafa;
-    padding: 40px 0;
+    padding-top: 40px;
     text-align: center;
 }
 
@@ -242,7 +246,7 @@ a voir pour section 3:4
 
     text-align: justify;
     background: url("../img/back_sect2.jpg") no-repeat center/cover fixed;
-    height: 100vh;
+    height: 140vh;
 }
 
 .part_1 {
@@ -266,16 +270,85 @@ realisation
 }
 
 
+/*******************************
+Equipe********************************/
+.center_text2{
+    background-color rgba(252, 97, 97, 0.1);
+    border: 5Px solid black;
+    padding-bottom: 20px;
+}
+.equipes {
+    
+    display: flex;
+    justify-content: space-around;
+}
+.equipes img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 30px 0px;
+
+}
+.equipe_P1{
+    color: gray;
+    font-size: 30px;
+}
+.equipe_P2{
+    font-style: oblique;
+    font-size: 16px;
+}
+/*******************************
+testimonials***************/
+.image{
+    max-width: 700px;
+    margin: 20px;
+    padding: 20px;
+}
+.image:hover{
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5Px 5px black;
+}
+.scrool{
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;
+}
+.image img{
+    max-height:100px ;
+    float:left;
+    margin-right: 10Px;
+    border-radius: 50%;
+}
+.sect_4{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(252, 97, 97, 0.1);
+}
+.part_2{
+    margin: 0px 30px;
+    max-width: 700px;
+    max-height: 900px;
+    line-height: 1.8;}
+    .part_3{
+        margin: 170px 30px;
+    }
 
 
 
-@media only screen and (max-width: 600px) {
+
+
+
+
+
+
+
+/* @media only screen and (max-width: 600px) {
     body {
         overflow-x: hidden;
     }
 
     /*************  header
-    **********************/
+    **********************
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -362,7 +435,7 @@ realisation
     }
 
     /***********************
-   sect 1*****************/
+   sect 1*****************
     .locations {
         display: grid;
         grid-template-columns: 1fr;
@@ -374,7 +447,7 @@ realisation
 
     /*********************
        sect_2
-       ***************************/
+       ***************************
     .sect_2 {
         text-align: center;
 
@@ -389,4 +462,4 @@ realisation
         align-items: center;
         overflow: auto;
     }
-}
+} */
