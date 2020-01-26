@@ -230,6 +230,20 @@ bouton
     padding: 12px;
     line-height: 1.8;
 }
+.desc {
+    margin-bottom: 20px;
+}
+.total_form {
+    line-height: 1.9;
+}
+#saveForm {
+    padding: 10px 20px;
+    font-size: 19px;
+    margin-left: 265px;
+}
+.btn_cta-2 img {
+    margin-left: 110px;
+}
 
 /***************
 part_2        **********************/
@@ -263,6 +277,7 @@ realisation
 .realisation {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .sect_3 {
@@ -281,6 +296,8 @@ Equipe********************************/
     
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+   
 }
 .equipes img {
     max-width: 200px;
@@ -303,10 +320,17 @@ testimonials***************/
     margin: 20px;
     padding: 20px;
 }
-.image:hover{
+.image p {
+    display:none;
+}
+.image:hover p{
+    display: block;
     border: 1px solid black;
     border-radius: 20px;
-    box-shadow: 5px 5Px 5px black;
+    box-shadow: 5px 5Px 5px rgba(252, 97, 97, 1);
+    max-width: 700px;
+    margin: 20px;
+    padding: 20px;
 }
 .scrool{
     display: flex;
