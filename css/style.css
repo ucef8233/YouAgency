@@ -25,6 +25,7 @@ h6 {
     font-weight: 500;
     text-transform: capitalize;
 }
+
 .center_text {
     text-align: center;
 }
@@ -32,55 +33,38 @@ h6 {
 /********************
 bouton
 ************************/
-.btn {
+.btn_header {
     color: black;
     padding: 10px 20px;
     border-radius: 4px;
     background-color: rgba(252, 97, 97, 1);
 }
 
-.btn:hover {
+.btn_header:hover {
     color: rgba(252, 97, 97, 1);
     background-color: black;
 }
 
 /******************
- navbar ************/
-
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    padding: 16px;
-    background-color: rgba(0, 0, 0, 0.1);
+ navbar  Bootstrap   ************/
+#nav-color {
+    background-color: rgba(0, 0, 0, 0.5);
 
 }
 
-.navbar ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-}
 
-.navbar ul li a {
-    margin: 0 6px;
-    padding: 12px;
-    color: black;
-    font-weight: bold;
-}
 
-.navbar ul li a:hover {
-    color: black;
-    background-color: rgba(252, 97, 97, 1);
-    border-radius: 4px;
-}
 
 /**header**/
 .header {
     background: no-repeat center/cover fixed;
-    height: 100vh;
+    height: 90vh;
+    max-width: 100%;
     animation: Anim 40s infinite;
     position: relative;
     overflow: hidden;
+    border-bottom: 5px solid rgba(252, 97, 97, 1);
+    border-radius: 5px 5px 50px rgba(252, 97, 97, 1);
 
 }
 
@@ -108,7 +92,7 @@ bouton
     font-size: 4rem;
     margin-bottom: 2rem;
     text-align: center;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .header_2 {
@@ -122,75 +106,67 @@ bouton
 }
 
 .header .header_content {
-    background-color: rgba(0, 0, 0, 0.1);
-    height: 98%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+    flex-wrap: wrap;
 }
 
-.header .header_content img {
-    position: absolute;
-    top: 22%;
-    left: 25%;
-
-    /* z-index: 1; */
-}
 
 .header-main-0 {
     padding-bottom: 0.75rem;
     font-size: 62PX;
 }
 
-.header-main {
-    position: absolute;
-    top: 27%;
-    left: 29%;
-    text-align: center;
-}
+
 
 .cta_catch {
-    font-size: 18px;
+    font-size: 42px;
     margin-bottom: 22px;
 }
 
 /**section**/
-.container {
-    max-width: 1280px;
+.containerr {
+    max-width: 1440px;
     margin: auto;
-    padding: 50PX 30px;
+    padding: 0px 30px;
 
 }
 
 .location_section {
     background-color: #fafafa;
-    padding-top: 40px;
     text-align: center;
 }
 
 .locations {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     position: relative;
+    z-index: 1;
     animation: mymove 10s;
 
 }
 
 @keyframes mymove {
     from {
-        left: -300px;
+        top: -400px;
     }
 
     to {
-        left: 10px;
+        top: 10px;
     }
 }
 
 .location {
-    flex: 1;
+    max-width: 350px;
+    height: 400px;
+    margin: 30px;
     padding: 30px 30px 15px 30px;
     border: 1px dotted black;
     border-radius: 30px;
@@ -218,17 +194,28 @@ bouton
     }
 }
 
-.location:nth-child(1) {
-    text-align: left;
-}
 
-.location:nth-child(3) {
-    text-align: right;
-}
 
 .location_text {
     padding: 12px;
     line-height: 1.8;
+}
+
+.desc {
+    margin-bottom: 20px;
+}
+
+.total_form {
+    line-height: 1.9;
+}
+
+.btn_cta-2 a {
+    padding-bottom: 20px;
+}
+
+.btn_cta-2 img {
+    margin-left: 110px;
+
 }
 
 /***************
@@ -242,19 +229,24 @@ a voir pour section 3:4
     transform: none;
 }
 
+#QUI {
+    padding-top: 0px !important;
+
+}
+
+
 .sect_2 {
 
     text-align: justify;
     background: url("../img/back_sect2.jpg") no-repeat center/cover fixed;
-    height: 140vh;
+    height: 75vh;
 }
 
 .part_1 {
     margin: 70px 150px;
-    max-width: 400px;
+    max-width: 500px;
     max-height: 700px;
-    line-height: 1.8;
-
+    line-height: 2.4;
 }
 
 /***************************
@@ -263,203 +255,148 @@ realisation
 .realisation {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.sect_3 {
+.nos_real {
+    border: 5Px solid black;
     background-color: rgba(0, 0, 0, 0.3);
+    padding-bottom: 20px
 }
 
 
 /*******************************
 Equipe********************************/
-.center_text2{
-    background-color rgba(252, 97, 97, 0.1);
-    border: 5Px solid black;
-    padding-bottom: 20px;
-}
+
 .equipes {
-    
+
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+
 }
+
 .equipes img {
     max-width: 200px;
     border-radius: 50%;
     margin: 30px 0px;
 
 }
-.equipe_P1{
+
+.equipe_P1 {
     color: gray;
     font-size: 30px;
 }
-.equipe_P2{
+
+.equipe_P2 {
     font-style: oblique;
     font-size: 16px;
 }
+
 /*******************************
 testimonials***************/
-.image{
+.image {
     max-width: 700px;
     margin: 20px;
     padding: 20px;
 }
-.image:hover{
+
+.image p {
+    display: none;
+}
+
+.image:hover p {
+    display: block;
     border: 1px solid black;
     border-radius: 20px;
-    box-shadow: 5px 5Px 5px black;
+    box-shadow: 5px 5Px 5px rgba(252, 97, 97, 1);
+    max-width: 700px;
+    margin: 20px;
+    padding: 20px;
 }
-.scrool{
+
+.scrool {
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around;
     flex-wrap: wrap;
 }
-.image img{
-    max-height:100px ;
-    float:left;
+
+.image img {
+    max-height: 100px;
+    float: left;
     margin-right: 10Px;
     border-radius: 50%;
 }
-.sect_4{
+
+.sect_4 {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     background-color: rgba(252, 97, 97, 0.1);
 }
-.part_2{
+
+.part_2 {
     margin: 0px 30px;
     max-width: 700px;
     max-height: 900px;
-    line-height: 1.8;}
-    .part_3{
-        margin: 170px 30px;
-    }
+    line-height: 1.8;
+}
 
+.part_3 {
+    margin: 170px 30px;
+}
 
+#saveForm {
+    padding: 10px 20px;
+    font-size: 19px;
+    margin-left: 265px;
+}
 
+.location--min {
+    width: 350px;
+}
 
+.location_text2 {
+    font-size: 42px;
+}
 
+li {
+    list-style: none;
+}
 
-
-
-
-
-/* @media only screen and (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    /*************  header
-    **********************
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-
-    }
-
-    .navbar ul {
-        flex-direction: column;
-
-    }
-
-    .navbar ul li {
-        margin-bottom: 1.1rem;
-        border: 1px solid rgba(252, 97, 97, 0.1);
-        background-color: rgba(252, 97, 97, 0.1);
-        border-radius: 30px;
-        color: white;
-    }
-
-    .navbar ul li:nth-child(1) {
-        padding: 3px 75px;
-    }
-
-    .navbar ul li:nth-child(2) {
-        padding: 3px 100PX;
-    }
-
-    .navbar ul li:nth-child(3) {
-        padding: 3px 100PX;
-    }
-
-    .navbar ul li:nth-child(4) {
-        padding: 3px 150PX;
-        margin-bottom: 50px;
-    }
-
-    .navbar ul li:nth-child(5) {
-        padding: 3px 175PX;
-        display: none;
-    }
-
-    .navbar ul li:nth-child(6) {
-        padding: 3px 170PX;
-    }
-
-    .navbar ul li:nth-child(7) {
-        padding: 3px 130PX;
-    }
-
-    .navbar ul li:nth-child(8) {
-        padding: 3px 110PX;
-    }
-
-    .navbar ul li:nth-child(9) {
-        padding: 3px 15PX;
-    }
-
-    .header {
-        animation: none;
-    }
-
-    .header-main {
-        top: 2%;
-        left: 6%;
-    }
-
-    .header_content img {
-        width: 435px;
-        top: -55% !important;
-        left: -6% !important;
-        z-index: -1;
-    }
-
-    .logo_title {
-        margin-bottom: 75px;
-    }
+@media screen and (min-width: 375px) {
 
     .header-main-0 {
-        display: none;
+        font-size: 30px;
     }
 
-    /***********************
-   sect 1*****************
-    .locations {
-        display: grid;
-        grid-template-columns: 1fr;
+
+
+    .cta_catch {
+        font-size: 18px;
+        margin-bottom: 69px;
     }
 
-    .header2 {
-        text-align: center;
+    .containerr {
+        padding: 0px;
     }
 
-    /*********************
-       sect_2
-       ***************************
     .sect_2 {
-        text-align: center;
-
+        height: 85vh;
     }
 
-    .part_1 {
-        margin: 10px 10px;
+    .part_1 div p {
+        margin: none;
     }
 
-    .realisation {
-        flex-direction: column;
-        align-items: center;
-        overflow: auto;
+    .realisation img {
+        margin-bottom: 15px;
+        border: 3px solid black;
     }
-} */
+
+    .equipe img {
+
+        border: 3px solid black;
+    }
+
+}
